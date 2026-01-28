@@ -119,6 +119,24 @@
         </video>
       </details>
     </span> 
+    <span class="link-line">
+      <details>
+        <summary>have we ever apoligized to pigeons?</summary>
+        <video
+          id="weLie"
+          src="weLie.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+          style="width: 10cm; height: 5cm; display: block;">
+        </video>
+
+        <button onclick="toggleMute('weLie')" style="font-size:0.7rem; margin-top:4px;">
+          🔊 Unmute
+        </button>
+    </details>
+  
 </p>
   <br><br>
   <br><br>
@@ -200,6 +218,19 @@
       loader.style.display = 'none';
     }, 3500); // slightly longer than CSS transition
   });
+
+  function toggleMute(videoId) {
+  var video = document.getElementById(videoId);
+  var btn = event.target;
+  
+  if (video.muted) {
+    video.muted = false;
+    btn.innerHTML = '🔇 Mute';
+  } else {
+    video.muted = true;
+    btn.innerHTML = '🔊 Unmute';
+  }
+}
 </script>
 
 </body>
