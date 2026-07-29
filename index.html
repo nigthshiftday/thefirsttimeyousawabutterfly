@@ -208,39 +208,56 @@
 <p>
   2026.06 venue : lovers & lollypops // city : porto<br>
     <span class="link-line">
-       <details>
+      <details>
         <summary>intro</summary>
         <video
-        src="Media/l&l intro.mp4" 
-        autoplay
-        loop
-        muted
-        playsinline
-        style="max-width:100%; height:auto; display:block;">
+          id="intro"
+          src="Media/l&l intro.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
         </video>
-      </details>
-      <details open>
+
+        <button onclick="toggleMute('intro')" style="font-size:0.7rem; margin-top:4px;">
+          🔊 Unmute
+        </button>
+      </details> 
+
+      <details>
         <summary>noise</summary>
         <video
-        src="Media/l&l noise.mp4" 
-        autoplay
-        loop
-        muted
-        playsinline
-        style="max-width:100%; height:auto; display:block;">
+          id="noise"
+          src="Media/l&l noise.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
         </video>
-      </details>
-      <details open>
-        <summary>"gongggg"</summary>
+
+        <button onclick="toggleMute('noise')" style="font-size:0.7rem; margin-top:4px;">
+          🔊 Unmute
+        </button>
+      </details> 
+
+       <details>
+        <summary>...</summary>
         <video
-        src="Media/l&l gong.mp4" 
-        autoplay
-        loop
-        muted
-        playsinline
-        style="max-width:100%; height:auto; display:block;">
+          id="gong"
+          src="Media/l&l gong.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
         </video>
-      </details>
+
+        <button onclick="toggleMute('gong')" style="font-size:0.7rem; margin-top:4px;">
+          🔊 Unmute
+        </button>
+      </details> 
     </span> 
 </p>
 
